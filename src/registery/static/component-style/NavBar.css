@@ -23,3 +23,15 @@
   font-size: 30px;
   float: right;
 }
+.title{
+    color:white;
+    font-size:30px;
+    font-family: Varela;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height:normal;
+    letter-spacing: normal;
+    margin-left: 45%;
+    position: absolute;
+}

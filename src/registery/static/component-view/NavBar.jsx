@@ -13,6 +13,7 @@ class ClaimInitiated extends Component {
   toggleViewOwned(){
     const { toggleViewOwned } =this.props;
     console.log("was reached");
+
     toggleViewOwned();
   }
   componentWillReceiveProps(props){
@@ -33,6 +34,7 @@ class ClaimInitiated extends Component {
     }
     return (
        <div className="nav-bar">
+        <h1 className="title">BRYDG</h1>
             {UserDetails}
        </div>
     )
