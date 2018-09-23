@@ -1,0 +1,16 @@
+.ClaimEvidenceBg {
+  width: 295px;
+  height: 302px;
+  border-radius: 10px;
+  background-color: #206e86;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.ClaimEvidenceFg {
+  width: 295px;
+  height: 224px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  text-align: center;
+}
