@@ -1,0 +1,21 @@
+.background-main{
+  min-width:100vw;
+  min-height:100vh;
+  background-image: url("/dist/assets/background-map.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.pop-up-overlay{
+  padding-left:37.5vw;
+  top:0px;
+}
+
+
+.inv-button{
+  min-width:50vw;
+  min-height:50vh;
+  opacity: 0;
+  position: absolute;
+}
