@@ -1,0 +1,22 @@
+.icBg {
+  width: 295px;
+  height: 738px;
+  border-radius: 10px;
+  background-color: #206e86;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.icFg{
+  width: 295px;
+  height: 666px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.icPlaceholder {
+  width: 280px;
+  object-fit: contain;
+  margin-top:5%;
+}

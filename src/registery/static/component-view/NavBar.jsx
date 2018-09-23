@@ -7,8 +7,14 @@ class ClaimInitiated extends Component {
     this.state = {
       loggedIn : props.loggedIn
     }
+    this.toggleViewOwned = this.toggleViewOwned.bind(this);
   }
 
+  toggleViewOwned(){
+    const { toggleViewOwned } =this.props;
+    console.log("was reached");
+    toggleViewOwned();
+  }
   componentWillReceiveProps(props){
     this.setState({loggedIn:props.loggedIn});
   }
@@ -19,7 +25,7 @@ class ClaimInitiated extends Component {
       UserDetails =
       <div>
 
-        <h1 className="welcome-title"> 1 <i class="fas fa-home"></i></h1>
+        <h1 className="welcome-title" onClick={this.toggleViewOwned}> 1 <i class="fas fa-home"></i></h1>
         <h1 className="pull-right welcome-title"> Welcome Freya</h1>
 
 

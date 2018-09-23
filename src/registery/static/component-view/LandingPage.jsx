@@ -7,6 +7,9 @@ import CreateAccount from "./CreateAccount";
 import ClaimPropertyDetails from "./ClaimPropertyDetails";
 import ClaimEvidence from "./ClaimEvidence";
 import ClaimInitiated from "./ClaimInitiated";
+import InitiateTransfer from './InitiateTransfer';
+import ViewOwned from "./ViewOwned";
+import CoOwned from "./CoOwned";
 import NavBar from "./NavBar";
 
 import "../component-style/General.css";
@@ -21,7 +24,10 @@ export default class LandingPage extends React.Component{
           claimDetails: false,
           claimEvidence: false,
           claimInitiated: false,
-          loggedIn:false
+          loggedIn:false,
+          viewOwned: false,
+          initiateTransfer:false,
+          coOwned:false
         }
         this.toggleClaim = this.toggleClaim.bind(this);
         this.toggleRequest = this.toggleRequest.bind(this);
@@ -29,6 +35,9 @@ export default class LandingPage extends React.Component{
         this.toggleClaimDetails = this.toggleClaimDetails.bind(this);
         this.toggleClaimEvidence = this.toggleClaimEvidence.bind(this);
         this.toggleClaimInitiated = this.toggleClaimInitiated.bind(this);
+        this.toggleViewOwned = this.toggleViewOwned.bind(this);
+        this.toggleInitiateTransfer = this.toggleInitiateTransfer.bind(this);
+        this.toggleCoOwned = this.toggleCoOwned.bind(this);
         this.login = this.login.bind(this);
     }
 
@@ -65,6 +74,21 @@ export default class LandingPage extends React.Component{
       this.setState({loggedIn: isLoggedIn, register:false});
     }
 
+    toggleViewOwned(){
+      this.setState({viewOwned:true, claim:false, request:false, register:false, details: false, claimDetails:false})
+    }
+
+    toggleInitiateTransfer(){
+      console.log("yep")
+      this.setState({initiateTransfer: true, viewOwned:false})
+      console.log(this.state.initiateTransfer);
+    }
+
+    toggleCoOwned(value){
+      console.log(value);
+      this.setState({initiateTransfer:false, coOwned:value})
+    }
+
     render(){
         let ClaimButton = null
 
@@ -96,12 +120,25 @@ export default class LandingPage extends React.Component{
           Popup = <div className="pop-up-overlay">
                     <ClaimInitiated toggleClaimInitiated={this.toggleClaimInitiated}/>
                   </div>
+        }else if(this.state.viewOwned){
+          Popup = <div className="pop-up-overlay">
+                    <ViewOwned toggleInitiateTransfer={this.toggleInitiateTransfer}/>
+                  </div>
+        }else if(this.state.initiateTransfer){
+          Popup = <div className="pop-up-overlay">
+                    <InitiateTransfer toggleCoOwned={this.toggleCoOwned}/>
+                  </div>
+        }else if(this.state.coOwned){
+          Popup = <div className="pop-up-overlay">
+                    <CoOwned toggleCoOwned={this.toggleCoOwned} />
+                  </div>
+
         }else{
           Popup = <button className="inv-button" onClick={this.toggleRequest} ></button>
         }
         return(
           <div>
-            <NavBar loggedIn={this.state.loggedIn}/>
+            <NavBar loggedIn={this.state.loggedIn} toggleViewOwned={this.toggleViewOwned}/>
             <img className="logo" src="/dist/assets/brydg-logo.png" />
             <div className="background-main">
 
