@@ -1,0 +1,25 @@
+.nav-bar{
+  width:100%;
+  height:40px;
+  background-color: #206e86;
+}
+
+
+.welcome-title{
+  color:white;
+  float:right;
+  font-size:30px;
+  font-family: Varela;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height:normal;
+  letter-spacing: normal;
+  margin-right: 50px;
+}
+
+.nav-bar i {
+  color:white;
+  font-size: 30px;
+  float: right;
+}

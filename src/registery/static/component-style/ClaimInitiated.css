@@ -1,0 +1,22 @@
+.ciBg {
+  width: 295px;
+  height: 372px;
+  border-radius: 10px;
+  background-color: #206e86;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.ciFg{
+  width: 295px;
+  height: 297px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.ciPlaceholder {
+  width: 260px;
+  object-fit: contain;
+  margin-top:5%;
+}

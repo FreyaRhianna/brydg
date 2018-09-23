@@ -1,0 +1,22 @@
+.ClaimPropertyDetailsBg {
+  width: 295px;
+  height: 566px;
+  border-radius: 10px;
+  background-color: #206e86;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.ClaimPropertyDetailsFg {
+  width: 295px;
+  height: 492px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.placeholderDetails {
+  width: 295px;
+  object-fit: contain;
+  margin-top:5%;
+}
