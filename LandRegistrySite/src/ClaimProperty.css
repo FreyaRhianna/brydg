@@ -1,0 +1,42 @@
+.ClaimPropertyBg {
+  width: 295px;
+  height: 390px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.-AddressText{
+  width: 153px;
+  height: 46px;
+  font-family: Varela;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4a4a4a;
+  position: relative;
+}
+
+
+.ShapeCircle {
+  width: 35px;
+  height: 35px;
+  border-radius: 100px;
+  background-color: #ff1a00;
+  position: absolute;
+  margin-left:5%;
+  margin-top:0.5%;
+}
+
+.ShapeArrow {
+  width: 17px;
+  height: 17px;
+  object-fit: contain;
+  position:absolute;
+  margin-left:6%;
+  margin-top:1.5%;
+}

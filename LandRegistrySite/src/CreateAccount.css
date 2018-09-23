@@ -1,0 +1,23 @@
+.createAccBackground {
+  width: 295px;
+  height: 437px;
+  border-radius: 10px;
+  background-color: #206e86;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.createAccForeground {
+  width: 295px;
+  height: 360px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin-bottom: 6%;
+}
+
+.profileIcon {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  margin-bottom:5%;
+}
